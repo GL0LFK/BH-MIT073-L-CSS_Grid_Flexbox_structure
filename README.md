@@ -1,4 +1,4 @@
-# BH-MIT073-L-CSS_Grid_Flexbox_structure
+# BH-MIT073-L-Grid_Flexbox_structure
 Készítse el a minta szerint megadott szerkezeteket!
 
 A képek színes négyzetei egy-egy blokkot szinbolizálnak.
