@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webprogramozás (BH-MIT073-L-GY-KMT/GI-2) Beaadando">
+    <meta name="author" content="Zsolt Drobina (GL0LFK)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fejleces tartalom</title>
+    <style>
+    body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows: 40px auto 40px;
+        grid-template-columns: 400px auto;
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+        gap: 10px 0;
+        width: 95%;
+        min-height: 400px;
+        margin: 5px 5px auto;
+    }
+    .grid-header {
+        grid-area: header;
+        background: purple;
+        display: flex;
+        align-items: center;
+        padding: 5px 5px;
+        gap: 10px;
+    }
+    .grid-header-menu-button {
+        width: 70px;
+        height: 20px;
+        background: cyan;
+    }
+    .grid-sidebar {
+        grid-area: sidebar;
+        background: lime;
+        margin-left: 70px;
+        min-height: 200px;
+    }
+    .grid-main {
+        grid-area: main;
+        background: yellow;
+        margin-right: 50px;
+        min-height: 200px;
+    }
+    .grid-footer {
+        grid-area: footer;
+        background: gray;
+        margin: 0 50px 0 70px;
+    }
+    </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-header">
+      <div class="grid-header-menu-button"></div>
+      <div class="grid-header-menu-button"></div>
+      <div class="grid-header-menu-button"></div>
+    </div>
+    <div class="grid-sidebar"></div>
+    <div class="grid-main"></div>
+    <div class="grid-footer"></div>
+  </div>
+</body>
+</html>

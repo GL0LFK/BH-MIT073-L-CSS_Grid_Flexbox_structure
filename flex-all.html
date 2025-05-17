@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webprogramozás (BH-MIT073-L-GY-KMT/GI-2) Beaadando">
+    <meta name="author" content="Zsolt Drobina (GL0LFK)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-all</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 95%;
+        margin: 0px 20px 5px 20px;
+    }
+    .header {
+        background: cyan;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-row {
+        display: flex;
+        gap: 40px;
+        flex: 1 0 auto;
+        min-height: 200px;
+    }
+
+    .col {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .col1 { 
+        background: orange;
+        flex: 1 1 0;
+    }
+    .col2 { 
+        background: red; 
+        flex: 3 1 0;
+        position: relative; 
+    }
+    .col3 { 
+        background: purple;
+        flex: 1 1 0;
+        }
+
+    .black-box {
+        width: 40px;
+        height: 40px;
+        background: black;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .footer {
+        background: blue;
+        color: white;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header"></div>
+        <div class="main-row">
+            <div class="col col1"></div>
+            <div class="col col2">
+                <div class="black-box"></div>
+            </div>
+            <div class="col col3"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

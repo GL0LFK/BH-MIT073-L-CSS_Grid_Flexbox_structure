@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webprogramozás (BH-MIT073-L-GY-KMT/GI-2) Beaadando">
+    <meta name="author" content="Zsolt Drobina (GL0LFK)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keprnyokep layout</title>
+    <style>
+        body {
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+        .panel {
+            background: gold;
+            padding: 50px 0;
+            width: 415px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 5px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background: orchid;
+        }
+        .box.placeholder {
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        This is a full flex box imolementation.
+        I realized there are actually 7 boxes, however 3 of them are transparent :)
+        I gave those "box placeholder" name
+    -->
+    <div class="panel">
+        <div class="box"></div>
+        <div class="box placeholder"></div>
+        <div class="box"></div>
+        <div class="box placeholder"></div>
+        <div class="box"></div>
+        <div class="box placeholder"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
